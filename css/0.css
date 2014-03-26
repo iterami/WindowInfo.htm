@@ -1,0 +1,19 @@
+a{
+    color: #4c4;
+}
+a:hover{
+    color: #777;
+}
+body{
+    background: #000;
+    color: #aaa;
+    font-family: sans-serif;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    padding: 9px;
+    text-align: left;
+}
