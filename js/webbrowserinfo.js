@@ -32,6 +32,8 @@ function update_info(){
     document.getElementById('outerWidth').innerHTML = window.outerWidth;
     document.getElementById('parent').innerHTML = window.parent;
     document.getElementById('performance').innerHTML = window.performance;
+    document.getElementById('performance.timing').innerHTML = window.performance.timing;
+    document.getElementById('performance.navigation').innerHTML = window.performance.navigation;
     document.getElementById('personalbar').innerHTML = window.personalbar;
     document.getElementById('screen').innerHTML = window.screen;
     document.getElementById('screenX').innerHTML = window.screenX;
