@@ -100,6 +100,17 @@ function update_info(){
     document.getElementById('performance.navigation.type').innerHTML = window.performance.navigation.type;
     document.getElementById('personalbar').innerHTML = window.personalbar;
     document.getElementById('screen').innerHTML = window.screen;
+    document.getElementById('screen.availHeight').innerHTML = window.screen.availHeight;
+    document.getElementById('screen.availLeft').innerHTML = window.screen.availLeft;
+    document.getElementById('screen.availTop').innerHTML = window.screen.availTop;
+    document.getElementById('screen.availWidth').innerHTML = window.screen.availWidth;
+    document.getElementById('screen.colorDepth').innerHTML = window.screen.colorDepth;
+    document.getElementById('screen.height').innerHTML = window.screen.height;
+    document.getElementById('screen.left').innerHTML = window.screen.left;
+    document.getElementById('screen.orientation').innerHTML = window.screen.orientation;
+    document.getElementById('screen.pixelDepth').innerHTML = window.screen.pixelDepth;
+    document.getElementById('screen.top').innerHTML = window.screen.top;
+    document.getElementById('screen.width').innerHTML = window.screen.width;
     document.getElementById('screenX').innerHTML = window.screenX;
     document.getElementById('screenY').innerHTML = window.screenY;
     document.getElementById('scrollbars').innerHTML = window.scrollbars;
