@@ -11,6 +11,7 @@ function update_info(){
     document.getElementById('frames').innerHTML = window.frames;
     document.getElementById('fullscreen').innerHTML = window.fullscreen;
     document.getElementById('history').innerHTML = window.history;
+    document.getElementById('history.length').innerHTML = window.history.length;
     document.getElementById('innerHeight').innerHTML = window.innerHeight;
     document.getElementById('innerWidth').innerHTML = window.innerWidth;
     document.getElementById('length').innerHTML = window.length;
