@@ -5,9 +5,6 @@ td{
     border: 1px solid #000;
     padding: 5px;
 }
-td:first-child{
-    text-align: right;
-}
 .top{
     background: #aaa;
 }
