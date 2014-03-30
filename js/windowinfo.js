@@ -1,140 +1,46 @@
-function update_info(){
-    document.getElementById('applicationCache').innerHTML = window.applicationCache;
-    document.getElementById('closed').innerHTML = window.closed;
-    document.getElementById('Components').innerHTML = window.Components;
-    document.getElementById('console').innerHTML = window.console;
-    document.getElementById('content').innerHTML = window.content;
-    document.getElementById('controllers').innerHTML = window.controllers;
-    document.getElementById('crypto').innerHTML = window.crypto;
-    document.getElementById('document').innerHTML = window.document;
-    document.getElementById('document.activeElement').innerHTML = window.document.activeElement;
-    document.getElementById('document.anchors').innerHTML = window.document.anchors;
-    document.getElementById('document.anchors.length').innerHTML = window.document.anchors.length;
-    document.getElementById('document.body').innerHTML = window.document.body;
-    document.getElementById('document.characterSet').innerHTML = window.document.characterSet;
-    document.getElementById('document.contentType').innerHTML = window.document.contentType;
-    document.getElementById('document.cookie').innerHTML = window.document.cookie;
-    document.getElementById('document.defaultView').innerHTML = window.document.defaultView;
-    document.getElementById('document.designMode').innerHTML = window.document.designMode;
-    document.getElementById('document.dir').innerHTML = window.document.dir;
-    document.getElementById('document.doctype').innerHTML = window.document.doctype;
-    document.getElementById('document.documentElement').innerHTML = window.document.documentElement;
-    document.getElementById('document.documentURI').innerHTML = window.document.documentURI;
-    document.getElementById('document.domain').innerHTML = window.document.domain;
-    document.getElementById('document.embeds').innerHTML = window.document.embeds;
-    document.getElementById('document.embeds.length').innerHTML = window.document.embeds.length;
-    document.getElementById('document.forms').innerHTML = window.document.forms;
-    document.getElementById('document.forms.length').innerHTML = window.document.forms.length;
-    document.getElementById('document.head').innerHTML = window.document.head;
-    document.getElementById('document.images').innerHTML = window.document.images;
-    document.getElementById('document.images.length').innerHTML = window.document.images.length;
-    document.getElementById('document.implementation').innerHTML = window.document.implementation;
-    document.getElementById('document.lastModified').innerHTML = window.document.lastModified;
-    document.getElementById('document.lastStyleSheetSet').innerHTML = window.document.lastStyleSheetSet;
-    document.getElementById('document.links').innerHTML = window.document.links;
-    document.getElementById('document.links.length').innerHTML = window.document.links.length;
-    document.getElementById('document.location').innerHTML = window.document.location;
-    document.getElementById('document.plugins').innerHTML = window.document.plugins;
-    document.getElementById('document.plugins.length').innerHTML = window.document.plugins.length;
-    document.getElementById('document.pointerLockElement').innerHTML = window.document.pointerLockElement;
-    document.getElementById('document.preferredStyleSheetSet').innerHTML = window.document.preferredStyleSheetSet;
-    document.getElementById('document.readyState').innerHTML = window.document.readyState;
-    document.getElementById('document.referrer').innerHTML = window.document.referrer;
-    document.getElementById('document.scripts').innerHTML = window.document.scripts;
-    document.getElementById('document.scripts.length').innerHTML = window.document.scripts.length;
-    document.getElementById('document.selectedStyleSheetSet').innerHTML = window.document.selectedStyleSheetSet;
-    document.getElementById('document.styleSheets').innerHTML = window.document.styleSheets;
-    document.getElementById('document.styleSheetSets').innerHTML = window.document.styleSheetSets;
-    document.getElementById('document.title').innerHTML = window.document.title;
-    document.getElementById('document.URL').innerHTML = window.document.URL;
-    document.getElementById('frameElement').innerHTML = window.frameElement;
-    document.getElementById('frames').innerHTML = window.frames;
-    document.getElementById('fullscreen').innerHTML = window.fullscreen;
-    document.getElementById('history').innerHTML = window.history;
-    document.getElementById('history.length').innerHTML = window.history.length;
-    document.getElementById('innerHeight').innerHTML = window.innerHeight;
-    document.getElementById('innerWidth').innerHTML = window.innerWidth;
-    document.getElementById('length').innerHTML = window.length;
-    document.getElementById('location').innerHTML = window.location;
-    document.getElementById('locationbar').innerHTML = window.locationbar;
-    document.getElementById('localStorage').innerHTML = window.localStorage;
-    document.getElementById('menubar').innerHTML = window.menubar;
-    document.getElementById('messageManager').innerHTML = window.messageManager;
-    document.getElementById('name').innerHTML = window.name;
-    document.getElementById('navigator').innerHTML = window.navigator;
-    document.getElementById('navigator.appCodeName').innerHTML = window.navigator.appCodeName;
-    document.getElementById('navigator.appName').innerHTML = window.navigator.appName;
-    document.getElementById('navigator.appVersion').innerHTML = window.navigator.appVersion;
-    document.getElementById('navigator.platform').innerHTML = window.navigator.platform;
-    document.getElementById('navigator.product').innerHTML = window.navigator.product;
-    document.getElementById('navigator.userAgent').innerHTML = window.navigator.userAgent;
-    document.getElementById('opener').innerHTML = window.opener;
-    document.getElementById('outerHeight').innerHTML = window.outerHeight;
-    document.getElementById('outerWidth').innerHTML = window.outerWidth;
-    document.getElementById('parent').innerHTML = window.parent;
-    document.getElementById('performance').innerHTML = window.performance;
-    document.getElementById('performance.timing').innerHTML = window.performance.timing;
-    document.getElementById('performance.timing.connectEnd').innerHTML = window.performance.timing.connectEnd;
-    document.getElementById('performance.timing.connectStart').innerHTML = window.performance.timing.connectStart;
-    document.getElementById('performance.timing.domainLookupEnd').innerHTML = window.performance.timing.domainLookupEnd;
-    document.getElementById('performance.timing.domainLookupStart').innerHTML = window.performance.timing.domainLookupStart;
-    document.getElementById('performance.timing.domComplete').innerHTML = window.performance.timing.domComplete;
-    document.getElementById('performance.timing.domContentLoadedEventEnd').innerHTML = window.performance.timing.domContentLoadedEventEnd;
-    document.getElementById('performance.timing.domContentLoadedEventStart').innerHTML = window.performance.timing.domContentLoadedEventStart;
-    document.getElementById('performance.timing.domInteractive').innerHTML = window.performance.timing.domInteractive;
-    document.getElementById('performance.timing.domLoading').innerHTML = window.performance.timing.domLoading;
-    document.getElementById('performance.timing.fetchStart').innerHTML = window.performance.timing.fetchStart;
-    document.getElementById('performance.timing.loadEventEnd').innerHTML = window.performance.timing.loadEventEnd;
-    document.getElementById('performance.timing.loadEventStart').innerHTML = window.performance.timing.loadEventStart;
-    document.getElementById('performance.timing.navigationStart').innerHTML = window.performance.timing.navigationStart;
-    document.getElementById('performance.timing.redirectEnd').innerHTML = window.performance.timing.redirectEnd;
-    document.getElementById('performance.timing.redirectStart').innerHTML = window.performance.timing.redirectStart;
-    document.getElementById('performance.timing.requestStart').innerHTML = window.performance.timing.requestStart;
-    document.getElementById('performance.timing.responseEnd').innerHTML = window.performance.timing.responseEnd;
-    document.getElementById('performance.timing.responseStart').innerHTML = window.performance.timing.responseStart;
-    document.getElementById('performance.timing.secureConnectionStart').innerHTML = window.performance.timing.secureConnectionStart;
-    document.getElementById('performance.timing.unloadEventEnd').innerHTML = window.performance.timing.unloadEventEnd;
-    document.getElementById('performance.timing.unloadEventStart').innerHTML = window.performance.timing.unloadEventStart;
-    document.getElementById('performance.navigation').innerHTML = window.performance.navigation;
-    document.getElementById('performance.navigation.redirectCount').innerHTML = window.performance.navigation.redirectCount;
-    document.getElementById('performance.navigation.type').innerHTML = window.performance.navigation.type;
-    document.getElementById('personalbar').innerHTML = window.personalbar;
-    document.getElementById('screen').innerHTML = window.screen;
-    document.getElementById('screen.availHeight').innerHTML = window.screen.availHeight;
-    document.getElementById('screen.availLeft').innerHTML = window.screen.availLeft;
-    document.getElementById('screen.availTop').innerHTML = window.screen.availTop;
-    document.getElementById('screen.availWidth').innerHTML = window.screen.availWidth;
-    document.getElementById('screen.colorDepth').innerHTML = window.screen.colorDepth;
-    document.getElementById('screen.height').innerHTML = window.screen.height;
-    document.getElementById('screen.left').innerHTML = window.screen.left;
-    document.getElementById('screen.orientation').innerHTML = window.screen.orientation;
-    document.getElementById('screen.pixelDepth').innerHTML = window.screen.pixelDepth;
-    document.getElementById('screen.top').innerHTML = window.screen.top;
-    document.getElementById('screen.width').innerHTML = window.screen.width;
-    document.getElementById('screenX').innerHTML = window.screenX;
-    document.getElementById('screenY').innerHTML = window.screenY;
-    document.getElementById('scrollbars').innerHTML = window.scrollbars;
-    document.getElementById('scrollMaxX').innerHTML = window.scrollMaxX;
-    document.getElementById('scrollMaxY').innerHTML = window.scrollMaxY;
-    document.getElementById('scrollX').innerHTML = window.scrollX;
-    document.getElementById('scrollY').innerHTML = window.scrollY;
-    document.getElementById('self').innerHTML = window.self;
-    document.getElementById('sessionStorage').innerHTML = window.sessionStorage;
-    document.getElementById('sidebar').innerHTML = window.sidebar;
-    document.getElementById('status').innerHTML = window.status;
-    document.getElementById('statusbar').innerHTML = window.statusbar;
-    document.getElementById('toolbar').innerHTML = window.toolbar;
-    document.getElementById('top').innerHTML = window.top;
-    document.getElementById('window').innerHTML = window.window;
-    document.getElementById('WebGLRenderingContext').innerHTML = window.WebGLRenderingContext;
-}
+window.onload = function(e){
+    var display = [];
 
-window.onload = update_info;
+    Object.getOwnPropertyNames(window).forEach(
+      function(property){
+          display.push(
+            '<tr><td>'
+            + property
+            + '<td>'
+            + window[property]
+          );
+          fetchInfo(
+            window[property],
+            property,
+            0
+          );
+      }
+    );
 
-window.onkeydown = function(e){
-    var key = window.event ? event : e;
-    key = key.charCode ? key.charCode : key.keyCode;
-    if(key == 85){
-        update_info();
+    function fetchInfo(object, name, depthcounter){
+        if(depthcounter < 3
+          && object != window){
+            for(property in object){
+                if(object.hasOwnProperty(property)){
+                    display.push(
+                      '<tr><td>'
+                      + name
+                      + '.'
+                      + property
+                      + '<td>'
+                      + object[property]
+                    );
+                    fetchInfo(
+                      object[property],
+                      name + '.' + property,
+                      depthcounter + 1
+                    );
+                }
+            }
+        }
     }
-};
+
+    document.getElementById(0).innerHTML =
+      '<tr class=top><td>window.<td>WindowInfo (Depth: 4)'
+      + display.sort().join('');
+}
