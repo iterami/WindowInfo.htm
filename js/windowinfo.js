@@ -52,4 +52,4 @@ window.onload = function(e){
       + depth
       + ')'
       + display.sort().join('');
-}
+};
