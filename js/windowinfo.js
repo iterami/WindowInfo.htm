@@ -1,4 +1,11 @@
 window.onload = function(e){
+    var depth = parseInt(window.location.search.substring(1));
+
+    if(isNaN(depth)
+      || depth < 0){
+        depth = 1;
+    }
+
     var display = [];
 
     Object.getOwnPropertyNames(window).forEach(
@@ -18,7 +25,7 @@ window.onload = function(e){
     );
 
     function fetchInfo(object, name, depthcounter){
-        if(depthcounter < 3
+        if(depthcounter < depth
           && object != window){
             for(property in object){
                 if(object.hasOwnProperty(property)){
@@ -41,6 +48,8 @@ window.onload = function(e){
     }
 
     document.getElementById(0).innerHTML =
-      '<tr class=top><td>window.<td>WindowInfo (Depth: 4)'
+      '<tr class=top><td>window.<td>WindowInfo (Depth: '
+      + depth
+      + ')'
       + display.sort().join('');
 }
