@@ -47,7 +47,7 @@
         }
     }
 
-    document.getElementById(0).innerHTML =
+    document.getElementById('property-list').innerHTML =
       '<tr class=top><td>window.<td>WindowInfo (Depth: '
       + depth
       + ')'
