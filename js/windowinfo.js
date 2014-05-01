@@ -1,4 +1,4 @@
-window.onload = function(e){
+(function(){
     var depth = parseInt(window.location.search.substring(1));
 
     if(isNaN(depth)
@@ -52,4 +52,4 @@ window.onload = function(e){
       + depth
       + ')'
       + display.sort().join('');
-};
+}());
