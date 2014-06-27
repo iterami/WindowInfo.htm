@@ -48,7 +48,7 @@
     }
 
     document.getElementById('property-list').innerHTML =
-      '<tr class=top><td>window.<td>WindowInfo (Depth: '
+      '<tr class=top><td>window.<td>WindowInfo.htm (Depth: '
       + depth
       + ')'
       + display.sort().join('');
