@@ -25,24 +25,26 @@
     );
 
     function fetchInfo(object, name, depthcounter){
-        if(depthcounter < depth
-          && object != window){
-            for(property in object){
-                if(object.hasOwnProperty(property)){
-                    display.push(
-                      '<tr><td>'
-                      + name
-                      + '.'
-                      + property
-                      + '<td>'
-                      + object[property]
-                    );
-                    fetchInfo(
-                      object[property],
-                      name + '.' + property,
-                      depthcounter + 1
-                    );
-                }
+        if(depthcounter >= depth
+          || object == window){
+            return;
+        }
+
+        for(property in object){
+            if(object.hasOwnProperty(property)){
+                display.push(
+                  '<tr><td>'
+                  + name
+                  + '.'
+                  + property
+                  + '<td>'
+                  + object[property]
+                );
+                fetchInfo(
+                  object[property],
+                  name + '.' + property,
+                  depthcounter + 1
+                );
             }
         }
     }
