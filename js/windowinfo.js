@@ -4,6 +4,7 @@
     if(isNaN(depth)
       || depth < 0){
         depth = 1;
+        location.replace('?1');
     }
 
     var display = [];
