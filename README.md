@@ -1,1 +1,4 @@
-A table filled with client-side information provided by the window object and collected via JavaScript.
+WindowInfo.htm
+--------------
+
+A table filled with client-side information provided by the `window` object and collected via JavaScript. Information depth can be controlled via a URL parameter.
