@@ -1,4 +1,6 @@
 (function(){
+    'use strict';
+
     var depth = parseInt(window.location.search.substring(1));
 
     if(isNaN(depth)
@@ -31,7 +33,7 @@
             return;
         }
 
-        for(property in object){
+        for(var property in object){
             if(object.hasOwnProperty(property)){
                 display.push(
                   '<tr><td>'
