@@ -29,7 +29,7 @@
 
     function fetchInfo(object, name, depthcounter){
         if(depthcounter >= depth
-          || object == window){
+          || object === window){
             return;
         }
 
