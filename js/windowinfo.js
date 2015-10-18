@@ -53,7 +53,7 @@
     }
 
     document.getElementById('windowinfo').innerHTML =
-      '<tr class=top><td>window.<td>Depth: '
+      '<tr><td>window.<td>Depth: '
       + depth
       + display.sort().join('');
 }());
