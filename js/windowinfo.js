@@ -1,7 +1,10 @@
 (function(){
     'use strict';
 
-    var depth = parseInt(window.location.search.substring(1));
+    var depth = parseInt(
+      window.location.search.substring(1),
+      10
+    );
 
     if(isNaN(depth)
       || depth < 0){
