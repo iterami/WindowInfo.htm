@@ -19,8 +19,9 @@
           display.push(
             '<tr><td>'
             + property
-            + '<td>'
+            + '<td><textarea>'
             + window[property]
+            + '</textarea>'
           );
           fetchInfo(
             window[property],
@@ -43,8 +44,9 @@
                   + name
                   + '.'
                   + property
-                  + '<td>'
+                  + '<td><textarea>'
                   + object[property]
+                  + '</textarea>'
                 );
                 fetchInfo(
                   object[property],
