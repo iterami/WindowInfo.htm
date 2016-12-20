@@ -17,7 +17,7 @@
     Object.getOwnPropertyNames(window).forEach(
       function(property){
           display.push(
-            '<tr><td>'
+            '<tr><td class=right>'
             + property
             + '<td><textarea>'
             + window[property]
