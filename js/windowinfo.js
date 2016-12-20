@@ -40,7 +40,7 @@
         for(var property in object){
             if(object.hasOwnProperty(property)){
                 display.push(
-                  '<tr><td>'
+                  '<tr><td class=right>'
                   + name
                   + '.'
                   + property
