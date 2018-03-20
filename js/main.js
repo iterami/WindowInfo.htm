@@ -57,8 +57,6 @@
         }
     }
 
-    document.getElementById('windowinfo').innerHTML =
-      '<tr class=header><td>window.<td>Depth: '
-      + depth
-      + display.sort().join('');
+    document.getElementById('depth').innerHTML = depth;
+    document.getElementById('result').innerHTML = display.sort().join('');
 }());
