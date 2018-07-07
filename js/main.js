@@ -6,7 +6,7 @@
       10
     );
 
-    if(isNaN(depth)
+    if(Number.isNaN(depth)
       || depth < 0){
         depth = 1;
         window.location.replace('?1');
