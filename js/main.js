@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    var depth = parseInt(
+    var depth = Number.parseInt(
       window.location.search.substring(1),
       10
     );
