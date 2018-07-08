@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    var depth = Number.parseInt(
+    let depth = Number.parseInt(
       window.location.search.substring(1),
       10
     );
@@ -12,7 +12,7 @@
         window.location.replace('?1');
     }
 
-    var display = [];
+    let display = [];
 
     Object.getOwnPropertyNames(window).forEach(
       function(property){
@@ -37,7 +37,7 @@
             return;
         }
 
-        for(var property in object){
+        for(let property in object){
             if(object.hasOwnProperty(property)){
                 display.push(
                   '<tr><td class=right>'
