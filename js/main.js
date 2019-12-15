@@ -43,7 +43,7 @@
                   + name
                   + '.'
                   + property
-                  + '<td><textarea>'
+                  + '<td><textarea readonly>'
                   + object[property]
                   + '</textarea>'
                 );
