@@ -18,7 +18,7 @@
           display.push(
             '<tr><td class=right>'
             + property
-            + '<td><textarea>'
+            + '<td><textarea readonly>'
             + window[property]
             + '</textarea>'
           );
