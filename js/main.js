@@ -37,7 +37,7 @@
         }
 
         for(let property in object){
-            if(object.hasOwnProperty(property)){
+            if(Reflect.has(object, property)){
                 display.push(
                   '<tr><td class=right>'
                   + name
