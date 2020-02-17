@@ -11,7 +11,7 @@
         depth = 0;
     }
 
-    let display = [];
+    const display = [];
 
     Object.getOwnPropertyNames(window).forEach(
       function(property){
@@ -36,8 +36,8 @@
             return;
         }
 
-        for(let property in object){
-            if(Reflect.has(object, property)){
+        for(const property in object){
+            if(object.hasOwnProperty(property)){
                 display.push(
                   '<tr><td class=right>'
                   + name
@@ -58,7 +58,7 @@
 
     document.getElementById('depth').value = 'Depth: ' + depth;
     document.getElementById('depth').onclick = function(){
-        let newdepth = window.prompt(
+        const newdepth = window.prompt(
           'Enter new depth:',
           depth
         );
