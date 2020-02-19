@@ -2,7 +2,7 @@
     'use strict';
 
     let depth = Number.parseInt(
-      window.location.search.substring(1),
+      globalThis.location.search.substring(1),
       10
     );
 
@@ -13,17 +13,17 @@
 
     const display = [];
 
-    Object.getOwnPropertyNames(window).forEach(
+    Object.getOwnPropertyNames(globalThis).forEach(
       function(property){
           display.push(
             '<tr><td class=right>'
             + property
             + '<td><textarea readonly>'
-            + window[property]
+            + globalThis[property]
             + '</textarea>'
           );
           fetchInfo(
-            window[property],
+            globalThis[property],
             property,
             0
           );
@@ -32,7 +32,7 @@
 
     function fetchInfo(object, name, depthcounter){
         if(depthcounter >= depth
-          || object === window){
+          || object === globalThis){
             return;
         }
 
@@ -58,7 +58,7 @@
 
     document.getElementById('depth').value = 'Depth: ' + depth;
     document.getElementById('depth').onclick = function(){
-        const newdepth = window.prompt(
+        const newdepth = globalThis.prompt(
           'Enter new depth:',
           depth
         );
@@ -69,7 +69,7 @@
             return;
         }
 
-        window.location.replace('?' + newdepth);
+        globalThis.location.replace('?' + newdepth);
     };
     document.getElementById('result').innerHTML = display.sort().join('');
 }());
