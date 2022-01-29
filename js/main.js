@@ -16,11 +16,8 @@
     Object.getOwnPropertyNames(globalThis).forEach(
       function(property){
           display.push(
-            '<tr><td class=right>'
-            + property
-            + '<td><textarea readonly>'
-            + globalThis[property]
-            + '</textarea>'
+            '<tr><td class=right>' + property
+              + '<td><textarea readonly>' + globalThis[property] + '</textarea>'
           );
           fetchInfo(
             globalThis[property],
@@ -39,13 +36,8 @@
         for(const property in object){
             if(object.hasOwnProperty(property)){
                 display.push(
-                  '<tr><td class=right>'
-                  + name
-                  + '.'
-                  + property
-                  + '<td><textarea readonly>'
-                  + object[property]
-                  + '</textarea>'
+                  '<tr><td class=right>' + name + '.' + property
+                    + '<td><textarea readonly>' + object[property] + '</textarea>'
                 );
                 fetchInfo(
                   object[property],
