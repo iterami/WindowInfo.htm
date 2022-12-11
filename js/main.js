@@ -16,7 +16,7 @@
     Object.getOwnPropertyNames(globalThis).forEach(
       function(property){
           display.push(
-            '<tr><td class=right>globalThis.' + property
+            '<tr><td>globalThis.' + property
               + '<td><textarea readonly>' + globalThis[property] + '</textarea>'
           );
           fetchInfo(
