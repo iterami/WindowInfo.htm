@@ -6,7 +6,7 @@
       10
     );
 
-    if(globalThis.isNaN(depth)
+    if(Number.isNaN(depth)
       || depth < 0){
         depth = 0;
     }
@@ -57,7 +57,7 @@
 
         if(newdepth === null
           || newdepth.length === 0
-          || isNaN(newdepth)){
+          || Number.isNaN(newdepth)){
             return;
         }
 
