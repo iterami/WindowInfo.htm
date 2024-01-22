@@ -48,7 +48,7 @@
         }
     }
 
-    document.getElementById('depth').value = 'Depth: ' + depth;
+    document.getElementById('depth').textContent = 'Depth: ' + depth;
     document.getElementById('depth').onclick = function(){
         const newdepth = globalThis.prompt(
           'Enter new depth:',
