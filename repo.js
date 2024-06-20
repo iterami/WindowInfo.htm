@@ -12,7 +12,6 @@
     }
 
     const display = [];
-
     Object.getOwnPropertyNames(globalThis).forEach(
       function(property){
           display.push(
@@ -26,7 +25,6 @@
           );
       }
     );
-
     function fetchInfo(object, name, depthcounter){
         if(depthcounter >= depth
           || object === globalThis){
@@ -47,9 +45,11 @@
             }
         }
     }
+    document.getElementById('result').innerHTML = display.sort().join('');
 
-    document.getElementById('depth').textContent = 'Depth: ' + depth;
-    document.getElementById('depth').onclick = function(){
+    const element = document.getElementById('depth');
+    element.textContent = 'Depth: ' + depth;
+    element.onclick = function(){
         const newdepth = globalThis.prompt(
           'Enter new depth:',
           depth
@@ -63,5 +63,4 @@
 
         globalThis.location.replace('?' + newdepth);
     };
-    document.getElementById('result').innerHTML = display.sort().join('');
 }());
