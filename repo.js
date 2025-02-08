@@ -32,7 +32,7 @@
         }
 
         for(const property in object){
-            if(object.hasOwnProperty(property)){
+            if(Object.hasOwn(object, property)){
                 display.push(
                   '<tr><td class=right>globalThis.' + name + '.' + property
                     + '<td><textarea readonly>' + object[property] + '</textarea>'
