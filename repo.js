@@ -18,14 +18,14 @@
             '<tr><td class=right>globalThis.' + property
               + '<td><textarea readonly>' + globalThis[property] + '</textarea>'
           );
-          fetchInfo(
+          getInfo(
             globalThis[property],
             property,
             0
           );
       }
     );
-    function fetchInfo(object, name, depthcounter){
+    function getInfo(object, name, depthcounter){
         if(depthcounter >= depth
           || object === globalThis){
             return;
@@ -37,7 +37,7 @@
                   '<tr><td class=right>globalThis.' + name + '.' + property
                     + '<td><textarea readonly>' + object[property] + '</textarea>'
                 );
-                fetchInfo(
+                getInfo(
                   object[property],
                   name + '.' + property,
                   depthcounter + 1
