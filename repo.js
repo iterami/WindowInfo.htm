@@ -1,11 +1,7 @@
 (function(){
     'use strict';
 
-    let depth = Number.parseInt(
-      globalThis.location.search.substring(1),
-      10
-    );
-
+    let depth = Number(globalThis.location.search.substring(1));
     if(globalThis.isNaN(depth)
       || depth < 0){
         depth = 0;
